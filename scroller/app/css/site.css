@@ -112,6 +112,8 @@ body { margin: 0; padding: 0; cursor: pointer; }
 
 .toggler[data-dir=next]:after { right: -30%; }
 
+[data-anim-immediately] { animation-duration: 0s !important; }
+
 /* purgecss start ignore */
 /* purgecss end ignore */
 

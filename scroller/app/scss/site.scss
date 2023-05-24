@@ -10,6 +10,10 @@
 @import "./components/card";
 @import "./components/toggler";
 
+[data-anim-immediately] {
+    animation-duration: 0s !important;
+}
+
 // .frame {
 //     position: relative;
 //     margin: 0 auto;

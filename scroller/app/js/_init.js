@@ -6,6 +6,10 @@ import js_slide from './component/js_slide';
     js_slide();
 
     document.body.addEventListener('click', () => {
-        window.href = 'https://www.google.com/q=scroller banner'
+        window.location.href = 'https://www.google.com/search?q=scroller banner';
     });
+
+    setTimeout(() => {
+        document.querySelector('[data-anim-immediately]').removeAttribute("data-anim-immediately");
+    }, 500);
 })();

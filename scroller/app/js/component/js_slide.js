@@ -10,6 +10,7 @@ export default function () {
 
     function onClick(e) {
         e.preventDefault();
+        e.stopPropagation();
 
         const $toggler = this;
 
