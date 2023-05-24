@@ -1,0 +1,35 @@
+.cta {
+    left: calc(159 / var(--width) * 100%);
+    bottom: calc(50 / var(--height) * 100%);
+    width: calc(321 / var(--width) * 100%);
+    height: calc(71 / var(--height) * 100%);
+    background: url(../../img/cta.svg) no-repeat center /contain;
+    animation: cta 1.7s linear 0s infinite;
+    z-index: 1;
+
+    &:hover {
+
+        @media #{$hover-mouse} {
+            filter: brightness(110%);
+        }
+    }
+
+    &:active {
+        transition: 0s;
+        filter: brightness(70%);
+    }
+}
+
+@keyframes cta {
+    from {
+        transform: scale(0.93);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.93);
+    }
+}

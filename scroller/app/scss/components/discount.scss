@@ -1,0 +1,8 @@
+.discount {
+    top: 0;
+    right: 0;
+    width: calc(219 / var(--width) * 100%);
+    height: calc(153 / var(--height) * 100%);
+    background: url(../../img/discount.svg) no-repeat top right /contain;
+    z-index: 1;
+}

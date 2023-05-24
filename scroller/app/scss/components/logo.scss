@@ -1,0 +1,15 @@
+.logo {
+    top: calc(21 / var(--height) * 100%);
+    left: calc(49 / var(--width) * 100%);
+    width: calc(380 / var(--width) * 100%);
+    height: calc(158 / var(--height) * 100%);
+    background: no-repeat top left /contain;
+    @include bgImage('logo', 'png');
+
+    &.is-3 {
+        top: calc(23 / var(--height) * 100%);
+        width: calc(371.5 / var(--width) * 100%);
+        height: calc(151 / var(--height) * 100%);
+        @include bgImage('logo3', 'png');
+    }
+}

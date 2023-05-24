@@ -1,0 +1,17 @@
+﻿@mixin bgImage($filename, $fileExt) {
+    .jpng & { 
+        background-image: url(../../img/#{$filename}.#{$fileExt}); 
+    }
+
+    .webp & { 
+        background-image: url(../../webp/#{$filename}.webp); 
+    }
+
+    .avif & { 
+        background-image: url(../../avif/#{$filename}.avif); 
+    }
+}
+
+//hover media:
+$hover-mouse: '(hover: hover) and (pointer: fine)';
+$hover-touch: '(hover: none) and (pointer: coarse)';

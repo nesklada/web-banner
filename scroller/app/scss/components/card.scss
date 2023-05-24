@@ -1,0 +1,19 @@
+.card {
+    top: calc(343 / var(--height) * 100%);
+    width: calc(445 / var(--width) * 100%);
+    height: calc(445 / var(--height) * 100%);
+    background: no-repeat center /contain;
+    @include bgImage('card', 'jpg');
+
+    &.is-2 {
+        @include bgImage('card2', 'jpg');
+    }
+    
+    &.is-3 {
+        @include bgImage('card3', 'jpg');
+    }
+    
+    &.is-4 {
+        @include bgImage('card4', 'jpg');
+    }
+}

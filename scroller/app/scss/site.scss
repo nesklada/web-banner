@@ -1,0 +1,21 @@
+﻿@import "./settings/mixins";
+
+@import "./components/_general";
+@import "./components/holder";
+@import "./components/discount";
+@import "./components/slide";
+@import "./components/cta";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/card";
+@import "./components/toggler";
+
+// .frame {
+//     position: relative;
+//     margin: 0 auto;
+//     max-width: 640px;
+//     min-height: 960px;
+// }
+
+/* purgecss start ignore */
+/* purgecss end ignore */

@@ -1,0 +1,65 @@
+.slide {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: translateX(100%);
+    animation: 0.5s linear 0s forwards;
+
+    &.animShow-next {
+        animation-name: slideShowNext;
+    }
+
+    &.animHide-next {
+        animation-name: slideHideNext;
+    }
+
+    &.animShow-prev {
+        animation-name: slideShowPrev;
+    }
+
+    &.animHide-prev {
+        animation-name: slideHidePrev;
+    }
+}
+
+@keyframes slideShowNext {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideHideNext {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideShowPrev {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideHidePrev {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
