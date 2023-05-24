@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.holder {
+    --width: 640;
+    --height: 107;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #052453;
+}
+
+
+.logo {
+    position: absolute;
+    top: calc(7 / var(--height) * 100%);
+    left: calc(41 / var(--width) * 100%);
+    width: calc(178 / var(--width) * 100%);
+    height: calc(93 / var(--height) * 100%);
+    background: url(./img/logo.png) no-repeat center /contain;
+}
+
+.cta {
+    position: absolute;
+    top: calc(22 / var(--height) * 100%);
+    right: calc(30 / var(--width) * 100%);
+    width: calc(340 / var(--width) * 100%);
+    height: calc(63 / var(--height) * 100%);
+    background: url(./img/cta.svg) no-repeat center /contain;
+    animation: cta 1.7s linear 0s infinite;
+}
+
+.cta:hover {
+    filter: brightness(110%);
+}
+
+.cta:active {
+    transition: 0s;
+    filter: brightness(70%);
+}
+
+@keyframes cta {
+    from {
+        transform: scale(0.93);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.93);
+    }
+}
+
+
+/* .frame {
+    position: relative;
+    margin: 0 auto;
+    max-width: 640px;
+    min-height: 107px;
+} */
