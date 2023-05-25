@@ -1,25 +1,25 @@
 .title {
-    top: calc(195.5 / var(--height) * 100%);
-    width: calc(480 / var(--width) * 100%);
-    height: calc(86 / var(--height) * 100%);
+    top: calc(195.5 / #{$holder-height} * 100%);
+    width: calc(480 / #{$holder-width} * 100%);
+    height: calc(86 / #{$holder-height} * 100%);
     background: url(../../img/title.svg) no-repeat center /contain;
 
     &.is-2 {
-        width: calc(584 / var(--width) * 100%);
-        height: calc(93 / var(--height) * 100%);
+        width: calc(584 / #{$holder-width} * 100%);
+        height: calc(93 / #{$holder-height} * 100%);
         background-image: url(../../img/title2.svg);
     }
 
     &.is-3 {
-        width: calc(480 / var(--width) * 100%);
-        height: calc(86 / var(--height) * 100%);
+        width: calc(480 / #{$holder-width} * 100%);
+        height: calc(86 / #{$holder-height} * 100%);
         background-image: url(../../img/title3.svg);
     }
 
     &.is-4 {
-        top: calc(215 / var(--height) * 100%);
-        width: calc(460 / var(--width) * 100%);
-        height: calc(53 / var(--height) * 100%);
+        top: calc(215 / #{$holder-height} * 100%);
+        width: calc(460 / #{$holder-width} * 100%);
+        height: calc(53 / #{$holder-height} * 100%);
         background-image: url(../../img/title4.svg);
     }
 }

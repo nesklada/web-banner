@@ -11,7 +11,3 @@
         background-image: url(../../avif/#{$filename}.avif); 
     }
 }
-
-//hover media:
-$hover-mouse: '(hover: hover) and (pointer: fine)';
-$hover-touch: '(hover: none) and (pointer: coarse)';

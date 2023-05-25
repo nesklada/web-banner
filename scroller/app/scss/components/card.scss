@@ -1,7 +1,7 @@
 .card {
-    top: calc(343 / var(--height) * 100%);
-    width: calc(445 / var(--width) * 100%);
-    height: calc(445 / var(--height) * 100%);
+    top: calc(343 / #{$holder-height} * 100%);
+    width: calc(445 / #{$holder-width} * 100%);
+    height: calc(445 / #{$holder-height} * 100%);
     background: no-repeat center /contain;
     @include bgImage('card', 'jpg');
 

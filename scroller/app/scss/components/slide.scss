@@ -5,7 +5,7 @@
     height: 100%;
     z-index: 0;
     transform: translateX(100%);
-    animation: 0.5s linear 0s forwards;
+    animation: 0.4s linear 0s forwards;
 
     &.animShow-next {
         animation-name: slideShowNext;

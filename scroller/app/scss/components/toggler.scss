@@ -1,8 +1,8 @@
 .toggler {
-    top: calc(532 / var(--height) * 100%);
+    top: calc(532 / #{$holder-height} * 100%);
     padding: 0;
-    width: calc(19 / var(--width) * 100%);
-    height: calc(33 / var(--height) * 100%);
+    width: calc(19 / #{$holder-width} * 100%);
+    height: calc(33 / #{$holder-height} * 100%);
     border: 0;
     text-indent: -9999px;
     color: transparent;
@@ -51,7 +51,7 @@
     }
 
     &[data-dir=prev]{
-        left: calc(30 / var(--width) * 100%);
+        left: calc(30 / #{$holder-width} * 100%);
 
         &:after {
             left: -25%;
@@ -59,7 +59,7 @@
     }
 
     &[data-dir=next] {
-        right: calc(30 / var(--width) * 100%);
+        right: calc(30 / #{$holder-width} * 100%);
 
         &:before {
             transform: scaleX(-1);

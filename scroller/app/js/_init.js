@@ -6,7 +6,7 @@ import js_slide from './component/js_slide';
     js_slide();
 
     document.body.addEventListener('click', () => {
-        window.location.href = 'https://www.google.com/search?q=scroller banner';
+        window.open('https://www.google.com/search?q=Main banner');
     });
 
     setTimeout(() => {

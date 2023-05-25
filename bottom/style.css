@@ -16,7 +16,6 @@ body {
     background: #052453;
 }
 
-
 .logo {
     position: absolute;
     top: calc(7 / var(--height) * 100%);
