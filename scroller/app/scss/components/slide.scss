@@ -6,6 +6,7 @@
     z-index: 0;
     transform: translateX(100%);
     animation: 0.4s linear 0s forwards;
+    will-change: transform;
 
     &.animShow-next {
         animation-name: slideShowNext;
