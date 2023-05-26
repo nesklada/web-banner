@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.holder {
+    --width: 960;
+    --height: 99;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.holder * {
+    position: absolute;
+    background: no-repeat center /contain;
+}
+
+.text {
+    top: calc(29 / var(--height) * 100%);
+    left: calc(209 / var(--width) * 100%);
+    width: calc(366 / var(--width) * 100%);
+    height: calc(42 / var(--height) * 100%);
+    background-image: url(./img/text.svg);
+}
+
+.cta {
+    top: calc(32 / var(--height) * 100%);
+    right: calc(65 / var(--width) * 100%);
+    width: calc(188 / var(--width) * 100%);
+    height: calc(37 / var(--height) * 100%);
+    background-image: url(./img/cta.svg);
+    animation: cta 1.7s linear 0s infinite;
+}
+
+.cta:hover {
+    filter: brightness(110%);
+}
+
+.cta:active {
+    transition: 0s;
+    filter: brightness(70%);
+}
+
+.divider {
+    top: calc(19 / var(--height) * 100%);
+    bottom: calc(15 / var(--height) * 100%);
+    right: calc(316 / var(--width) * 100%);
+    width: 2px;
+    background: #1EDC82;
+}
+
+@keyframes cta {
+    from {
+        transform: scale(0.93);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.93);
+    }
+}
+
+/* .frame {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 99px;
+    background: red;
+} */
