@@ -1,5 +1,8 @@
 import createElement from "../common/createElement";
 
+export const EVENT_CHANGE_SLIDE = 'custom:wbf_changeSlide';
+export const EVENT_CHANGE_SLIDE_KEY = 'slideIndex';
+
 export default function () {
     const ACTIVE_STATE = 'active';
 
@@ -57,12 +60,26 @@ export default function () {
 
         currentSlideIndex = index;
 
+        triggerChangeEvent(currentSlideIndex);
+
         if (!$dots) return
 
         $dots.forEach(($dot, i) => {
             $dot.classList.remove(ACTIVE_STATE);
             if (i === index) $dot.classList.add(ACTIVE_STATE);
         });
+    }
+
+    function triggerChangeEvent(index) {
+        const customEvent = new CustomEvent(EVENT_CHANGE_SLIDE,
+            {
+                detail: {
+                    [EVENT_CHANGE_SLIDE_KEY]: index
+                }
+            }
+        );
+
+        document.dispatchEvent(customEvent);
     }
 
     (function dots() {
@@ -89,4 +106,13 @@ export default function () {
 
         $dots = $dots.querySelectorAll('button');
     })();
+
+    setTimeout(() => {
+        const target = 'data-anim-immediately';
+        const $targetImmediatelyAnimation = document.querySelector(`[${target}]`);
+
+        if (!$targetImmediatelyAnimation) return
+
+        $targetImmediatelyAnimation.removeAttribute(target);
+    }, 500);
 }

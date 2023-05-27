@@ -1,20 +1,13 @@
 import avifWebpBackground from './component/avifWebpBackground';
 import js_slide from './component/js_slide';
+import initPostMessages from './config/API';
 
 (function () {
     avifWebpBackground();
     js_slide();
+    initPostMessages();
 
     document.body.addEventListener('click', () => {
         window.open('https://www.google.com/search?q=Left banner');
     });
-
-    setTimeout(() => {
-        const target = 'data-anim-immediately';
-        const $targetImmediatelyAnimation = document.querySelector(`[${target}]`);
-
-        if (!$targetImmediatelyAnimation) return
-
-        $targetImmediatelyAnimation.removeAttribute(target);
-    }, 500);
 })();
