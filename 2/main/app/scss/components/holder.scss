@@ -1,0 +1,16 @@
+.holder {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: #{$holder-width}px;
+    height: 100%;
+    max-height: #{$holder-height}px;
+    // background: #052453;
+    // overflow: hidden;
+
+    > * {
+        position: absolute;
+    }
+}

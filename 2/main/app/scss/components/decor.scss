@@ -1,0 +1,20 @@
+.decor {
+    width: calc(919 / #{$holder-width} * 100%);
+    height: calc(820 / #{$holder-height} * 100%);
+    max-height: 820px;
+    max-width: 919px;
+    background: url(../../img/decor.svg) no-repeat;
+    background-size: contain;
+
+    &.is-top {
+        top: calc(417 / #{$holder-height} * -1 * 100%);
+        left: calc(285 / #{$holder-width} * -1 * 100%);
+        background-position: center right;
+    }
+
+    &.is-bottom {
+        top: calc(600 / #{$holder-height} * 100%);
+        left: calc(300 / #{$holder-width} * -1 * 100%);
+        background-position: top right;
+    }
+}

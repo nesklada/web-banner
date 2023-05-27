@@ -1,0 +1,53 @@
+body { margin: 0; padding: 0; text-align: center; cursor: pointer; }
+
+.holder { position: absolute; top: 0; right: 0; width: 100%; max-width: 1920px; height: 100%; max-height: 970px; background: #052453; overflow: hidden; }
+
+.holder > * { position: absolute; }
+
+.slider { top: 0; right: 0; width: calc(558 / 1920 * 100%); height: calc(406 / 970 * 100%); background: url(../../img/slider-bg.svg) no-repeat top right/contain; overflow: hidden; }
+
+.slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: no-repeat top right /contain; transition: 0.4s linear; opacity: 0; }
+
+.jpng .slide.is-1 { background-image: url(../../img/slide1.png); }
+
+.webp .slide.is-1 { background-image: url(../../webp/slide1.webp); }
+
+.avif .slide.is-1 { background-image: url(../../avif/slide1.avif); }
+
+.jpng .slide.is-2 { background-image: url(../../img/slide2.png); }
+
+.webp .slide.is-2 { background-image: url(../../webp/slide2.webp); }
+
+.avif .slide.is-2 { background-image: url(../../avif/slide2.avif); }
+
+.jpng .slide.is-3 { background-image: url(../../img/slide3.png); }
+
+.webp .slide.is-3 { background-image: url(../../webp/slide3.webp); }
+
+.avif .slide.is-3 { background-image: url(../../avif/slide3.avif); }
+
+.jpng .slide.is-4 { background-image: url(../../img/slide4.png); }
+
+.webp .slide.is-4 { background-image: url(../../webp/slide4.webp); }
+
+.avif .slide.is-4 { background-image: url(../../avif/slide4.avif); }
+
+.jpng .slide.is-5 { background-image: url(../../img/slide5.png); }
+
+.webp .slide.is-5 { background-image: url(../../webp/slide5.webp); }
+
+.avif .slide.is-5 { background-image: url(../../avif/slide5.avif); }
+
+.slide.active { opacity: 1; }
+
+.decor { width: calc(919 / 1920 * 100%); height: calc(820 / 970 * 100%); max-height: 820px; max-width: 919px; background: url(../../img/decor.svg) no-repeat; background-size: contain; }
+
+.decor.is-top { top: calc(417 / 970 * -1 * 100%); left: calc(285 / 1920 * -1 * 100%); background-position: center right; }
+
+.decor.is-bottom { top: calc(600 / 970 * 100%); left: calc(300 / 1920 * -1 * 100%); background-position: top right; }
+
+[data-anim-immediately] { animation-duration: 0s !important; }
+
+.frame { position: relative; margin: 0 auto; max-width: 1920px; min-height: 100svh; background: #161528; }
+
+/*# sourceMappingURL=site.css.map */
