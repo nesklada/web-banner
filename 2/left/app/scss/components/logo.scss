@@ -1,0 +1,16 @@
+.logo {
+    top: calc(51 / #{$holder-height} * 100%);
+    right: calc(16 / #{$holder-width} * 100%);
+    width: calc(182 / #{$holder-width} * 100%);
+    height: calc(40 / #{$holder-height} * 100%);
+    background: url(../../img/logo.svg) no-repeat bottom right /contain;
+
+    @media(min-width: $size-s) {
+        right: calc(27 / #{$holder-width} * 100%);
+    }
+
+    @media(min-width: $size-l) {
+        top: calc(47 / #{$holder-height} * 100%);
+        right: calc(57 / #{$holder-width} * 100%);
+    }
+}

@@ -1,0 +1,15 @@
+.content {
+    padding: 0 16px;
+    top: calc(119 / #{$holder-height} * 100%);
+    left: 0;
+    width: 100%;
+
+    @media(min-width: $size-s) {
+        padding: 0 24px;
+    }
+
+    @media(min-width: $size-l) {
+        top: calc(123 / #{$holder-height} * 100%);
+        padding: 0 54px;
+    }
+}
