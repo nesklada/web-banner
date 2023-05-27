@@ -1,4 +1,19 @@
 .cta {
     margin: 0 auto;
     max-width: 285px;
+    animation: cta 1.7s linear 0s infinite;
+}
+
+@keyframes cta {
+    from {
+        transform: scale(0.93);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.93);
+    }
 }
