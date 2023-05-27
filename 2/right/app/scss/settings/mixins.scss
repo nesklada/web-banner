@@ -1,0 +1,13 @@
+﻿@mixin bgImage($filename, $fileExt) {
+    .jpng & { 
+        background-image: url(../../img/#{$filename}.#{$fileExt}); 
+    }
+
+    .webp & { 
+        background-image: url(../../webp/#{$filename}.webp); 
+    }
+
+    .avif & { 
+        background-image: url(../../avif/#{$filename}.avif); 
+    }
+}

@@ -1,0 +1,23 @@
+.cta {
+    margin: 0 auto;
+    max-width: 244px;
+    animation: cta 1.7s linear 0s infinite;
+
+    // @media screen and (min-width: $size-s) and (max-width: ($size-l - 1px)) {
+    //     max-width: 157px;
+    // }
+}
+
+@keyframes cta {
+    from {
+        transform: scale(0.93);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.93);
+    }
+}

@@ -1,0 +1,37 @@
+﻿@import "./settings/mixins";
+@import "./settings/variables";
+@import "./settings/fonts";
+
+@import "./components/_general";
+@import "./components/holder";
+@import "./components/content";
+@import "./components/title";
+@import "./components/list";
+@import "./components/cta";
+
+[data-anim-immediately] {
+    animation-duration: 0s !important;
+}
+
+.btn-hover {
+
+    &:hover {
+
+        @media #{$hover-mouse} {
+            filter: brightness(120%);
+        }
+    }
+
+    &:active {
+        transition: 0s;
+        filter: brightness(70%);
+    }
+}
+
+// .frame {
+//     position: relative;
+//     margin: 0 auto;
+//     max-width: #{$holder-width}px;
+//     min-height: 100svh;
+//     background: #161528;
+// }

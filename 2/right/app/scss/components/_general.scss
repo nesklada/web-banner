@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'CodecPro', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-x {
+    left: 50%;
+    transform: translateX(-50%);
+}

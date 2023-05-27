@@ -1,0 +1,45 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 1.65;
+
+    @media(min-width: $size-s) {
+        font-size: 16px;
+    }
+
+    @media(min-width: $size-l) {
+        gap: 14px;
+        font-size: 20px;
+    }
+
+    li {
+        position: relative;
+        padding-left: 16px;
+
+        @media(min-width: $size-s) {
+            --icon-size: 16px;
+            --icon-top: 3px;
+            padding-left: 20px;
+        }
+
+        @media(min-width: $size-l) {
+            --icon-size: 21px;
+            padding-left: 28px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: var(--icon-top, 0);
+            left: 0;
+            width: var(--icon-size, 12px);
+            height: var(--icon-size, 12px);
+            background: url(../../img/check.svg) no-repeat center /contain;
+        }
+    }
+}

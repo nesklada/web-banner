@@ -1,0 +1,29 @@
+.content {
+    padding: 0 16px;
+    top: calc(318 / #{$holder-height} * 100%);
+    left: 0;
+    width: 100%;
+
+    @media(min-width: $size-s) {
+        padding: 0 24px;
+        top: calc(374 / #{$holder-height} * 100%);
+    }
+
+    @media(min-width: $size-l) {
+        top: calc(426 / #{$holder-height} * 100%);
+        padding: 0 54px;
+    }
+
+    &-inner {
+        margin-bottom: 24px;
+        max-width: 344px;
+
+        @media(min-width: $size-s) {
+            margin-bottom: 32px;
+        }
+    
+        @media(min-width: $size-l) {
+            margin-bottom: 42px;
+        }
+    }
+}
