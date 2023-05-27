@@ -15,7 +15,7 @@
   \*************************/
 /***/ (() => {
 
-eval("(function () {\n  document.body.addEventListener('click', function () {// window.open('https://www.google.com/search?q=Left banner');\n  });\n})();\n\n//# sourceURL=webpack://myproject/./app/js/_init.js?");
+eval("(function () {\n  document.body.addEventListener('click', function () {\n    window.open('https://www.google.com/search?q=Right banner');\n  });\n})();\n\n//# sourceURL=webpack://myproject/./app/js/_init.js?");
 
 /***/ })
 
