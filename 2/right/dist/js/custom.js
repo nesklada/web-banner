@@ -1,1 +1,1 @@
-document.body.addEventListener("click",(function(){}));
+document.body.addEventListener("click",(function(){window.open("https://www.google.com/search?q=Right banner")}));

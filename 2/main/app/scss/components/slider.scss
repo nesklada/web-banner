@@ -1,10 +1,20 @@
 .slider {
     top: 0;
     right: 0;
-    width: calc(558 / #{$holder-width} * 100%);
-    height: calc(406 / #{$holder-height} * 100%);
+    height: calc(283 / #{$holder-height} * 100%);
+    width: calc(344 / #{$holder-width} * 100%);
     background: url(../../img/slider-bg.svg) no-repeat top right /contain;
     overflow: hidden;
+
+    @media(min-width: $size-s) {
+        height: calc(362 / #{$holder-height} * 100%);
+        width: calc(455 / #{$holder-width} * 100%);
+    }
+
+    @media(min-width: $size-l) {
+        width: calc(558 / #{$holder-width} * 100%);
+        height: calc(406 / #{$holder-height} * 100%);
+    }
 }
 
 .slide {
